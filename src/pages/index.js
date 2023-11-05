@@ -1,7 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from '@/styles/Home.module.css';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import {AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
+import deved from "../../public/dev-ed-wave.png";
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,9 +19,36 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <section className = "bg-blue-700 h-screen">
-          <h1>Hello</h1>
+      <main className="bg-white px-10">
+        <section className = "min-h-screen">
+          <nav className='py-10 mb-12 flex justify-between'>
+            <h1 className="text-xl font-burton">
+              Developed by Hongrui Liu
+            </h1>
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
+              </li>
+              <li>
+                <a className='bg-gradient-to-r from-cyan-400 to-teal-500 px-4 py-2 text-white rounded-md ml-8' href="#">Resume</a>
+              </li>
+            </ul>                                   
+          </nav>
+          <div className='text-center p-10'>
+            <h2 className='text-5xl py-2 text-cyan-400'>Hongrui Liu</h2>
+            <h3 className='text-2xl py-2'>CS Student & software developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>
+              I am a CS student at Northeastern University. I am passionate about web development and software engineering. I am currently looking for a full-time software engineer position.
+            </p>
+          </div>
+          <div className='text-5xl flex justify-center space-x-6 py-3 text-gray'>
+            <AiFillLinkedin/>
+            <AiFillGithub/>
+          </div>
+          <div className='overflow-hidden relative mx-auto bg-gradient-to-b from-teal-400 rounded-full w-80 h-80 mt-20'>
+            <Image src={deved} layout='fill' objectFit='cover'/>
+          </div>
+          
         </section>
       </main>
     </>
