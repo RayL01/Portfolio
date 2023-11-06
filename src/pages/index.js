@@ -3,9 +3,13 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
+import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin, AiFillGoogleCircle, AiFillApple } from 'react-icons/ai';
 import deved from "../../public/dev-ed-wave.png";
-
+import design from "../../public/design.png";
+import code from "../../public/code.png";
+import consulting from "../../public/consulting.png";
+import padmatch from "../../public/padmatch.png";
+import { FaGooglePlay, FaApple } from 'react-icons/fa';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,36 +23,97 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
-        <section className = "min-h-screen">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
+        <section className="min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className="text-xl font-burton">
               Developed by Hongrui Liu
             </h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
+                <BsFillMoonStarsFill className='cursor-pointer text-2xl' />
               </li>
               <li>
                 <a className='bg-gradient-to-r from-cyan-400 to-teal-500 px-4 py-2 text-white rounded-md ml-8' href="#">Resume</a>
               </li>
-            </ul>                                   
+            </ul>
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-cyan-400'>Hongrui Liu</h2>
             <h3 className='text-2xl py-2'>CS Student & software developer</h3>
             <p className='text-md py-5 leading-8 text-gray-800'>
-              I am a CS student at Northeastern University. I am passionate about web development and software engineering. I am currently looking for a full-time software engineer position.
+              I am a CS student @ Northeastern University. I am passionate about web development and software engineering. I am currently looking for a full-time software engineer position.
             </p>
           </div>
           <div className='text-5xl flex justify-center space-x-6 py-3 text-gray'>
-            <AiFillLinkedin/>
-            <AiFillGithub/>
+            <a href="https://www.linkedin.com/in/hongrui-ray-liu/" target="_blank" rel="noopener noreferrer">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/RayL01" target="_blank" rel="noopener noreferrer">
+              <AiFillGithub />
+            </a>
           </div>
           <div className='overflow-hidden relative mx-auto bg-gradient-to-b from-teal-400 rounded-full w-80 h-80 mt-20'>
-            <Image src={deved} layout='fill' objectFit='cover'/>
+            <Image src={deved} layout='fill' objectFit='cover' />
           </div>
-          
+        </section>
+
+
+        <section>
+          <div>
+            <h1 className='text-3xl py-1 font-burton' >Professional Experiences</h1>
+            <p className='text-md py-2 leading-8 text-gray-800'>
+              Since the begining of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for
+              <span className='text-teal-500'> agencies </span>
+              consulted for
+              <span className='text-teal-500'> start-ups </span>
+              and collaborated with talented people to create digital lives for both business and consumer use
+            </p>
+          </div>
+          <div className='space-y-6'>
+
+            <div className='bg-gray-100 p-6 rounded-lg shadow-lg relative'>
+              <h3 className='text-xl text-gray-800 font-semibold mb-2'>Mobile Software Engineer Intern @ PadMatch</h3>
+              <p className='text-teal-500 mb-4'>PadMatch, Boston, Massachusetts — July 2023 - Present</p>
+              <p className='text-gray-700 mb-4 mr-12 italic'>
+                In this internship, I'm mainly responsible for the development of the mobile application. I'm using Flutter to build the app and Spring Boot as the backend. I'm also responsible for the design of the app as well as a tight collaboration with the UI/UX designer.
+              </p>
+              <div className='flex justify-start items-center mt-4 cursor-pointer'>
+                <a href='https://play.google.com/store/apps/details?id=com.padmatch.residentspad&hl=en_US&gl=US' target='_blank' rel='noopener noreferrer' className='flex items-center mr-4'>
+                  <FaGooglePlay className='text-4xl text-green-700' />
+                  <span className='ml-2'>Google Play</span>
+                </a>
+                <a href='YOUR_APP_STORE_LINK' target='_blank' rel='noopener noreferrer' className='flex items-center'>
+                  <FaApple className='text-4xl text-black' />
+                  <span className='ml-2'>App Store</span>
+                </a>
+              </div>
+              <div className='absolute right-0 top-0 mt-2 mr-2'>
+                <Image src={padmatch} className='w-20 h-20' />
+              </div>
+            </div>
+
+
+
+            <div className='bg-gray-100 shadow-lg rounded-lg p-6'>
+              <h3 className='text-xl text-gray-800 font-semibold'>Software Engineering Intern</h3>
+              <p className='text-teal-500'>Chongqing Kungang Technology Co., Ltd., China — May 2021 - July 2021</p>
+              <ul className='list-disc list-inside text-gray-700'>
+                <li>Engineered and deployed an employee...</li>
+                <li>Developed the backend of a chemical...</li>
+                {/* ... 其他描述 */}
+              </ul>
+            </div>
+            <div className='bg-gray-100 shadow-lg rounded-lg p-6'>
+              <h3 className='text-xl text-gray-800 font-semibold'>Software Engineering Intern</h3>
+              <p className='text-teal-500'>Beijing Qianfeng Internet Technology Co., Ltd, China — May 2020 - July 2020</p>
+              <ul className='list-disc list-inside text-gray-700'>
+                <li>Conceptualized and designed MYSQL databases...</li>
+                <li>Utilized Spring Boot framework coupled with JPA...</li>
+                {/* ... 其他描述 */}
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
     </>
