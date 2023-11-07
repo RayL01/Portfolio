@@ -13,12 +13,12 @@ import Image from 'next/image';
 
 const ActiveSlider = () => {
     return (
-        <div className="flex items-center justify-center flex-col h-[900px] bg-[#6c34af]">
+        <div className="flex items-center justify-center flex-col h-[900px] bg-slate-400">
             <Swiper
                 breakpoints={{
                     340: {
                         slidesPerView: 2,
-                        spaceBetween: 15,
+                        spaceBetween: 5,
                     },
                     700: {
                         slidesPerView: 3,
@@ -34,13 +34,13 @@ const ActiveSlider = () => {
             >
                 {ServiceData.map((item) => (
                     <SwiperSlide key={item.title}>
-                        <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer">
+                        <div className="flex flex-col gap-6 mb-20 group relative  text-white rounded-xl px-6 py-8   md:h-[250px] md:w-[200px]  lg:h-[300px] lg:w-[220px] xl:h-[400px] xl:w-[350px] overflow-hidden cursor-pointer">
                             <Image
                                 src={item.backgroundImage}
                                 alt={`Image for ${item.title}`} // 提供一个描述性的 alt 属性
                                 layout="fill"
                                 objectFit="cover"
-                                className="absolute inset-0"
+                                // className="absolute inset-0"
                             />
                             <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
                             <div className="relative flex flex-col gap-3">

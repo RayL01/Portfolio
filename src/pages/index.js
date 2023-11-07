@@ -113,9 +113,11 @@ export default function Home() {
                   <span className='ml-2 dark:text-white'>App Store</span>
                 </a>
               </div>
-              <div className='absolute right-0 top-0 mt-2 mr-2'>
-                <Image src={padmatch} className='w-20 h-20' />
+              <div className='absolute right-0 top-0 sm:w-10 sm:h-10 lg:w-20 lg:h-20'>
+                <Image src={padmatch} layout='fill' objectFit='contain' />
               </div>
+
+
             </div>
 
 
@@ -123,27 +125,23 @@ export default function Home() {
             <div className=' shadow-lg rounded-lg p-6 dark:bg-gray-800'>
               <h3 className='text-xl text-gray-800 font-semibold dark:text-white'>Software Engineering Intern</h3>
               <p className='text-teal-500'>Chongqing Kungang Technology Co., Ltd., China — May 2021 - July 2021</p>
-              <ul className='list-disc list-inside text-gray-700 dark:text-white'>
-                <li>Engineered and deployed an employee...</li>
-                <li>Developed the backend of a chemical...</li>
-                {/* ... 其他描述 */}
-              </ul>
+              <p className='text-gray-700 mb-4 mr-12 italic dark:text-white'>
+                Here I was responsible for the development of the backend of a chemical industry safety management system . I was using Spring Boot framework to build the backend and MySQL as the database. I was also responsible for the testing of the backend with JUnit.
+              </p>
             </div>
             <div className=' shadow-lg rounded-lg p-6 dark:bg-gray-800'>
               <h3 className='text-xl text-gray-800 font-semibold dark:text-white'>Software Engineering Intern</h3>
               <p className='text-teal-500'>Beijing Qianfeng Internet Technology Co., Ltd, China — May 2020 - July 2020</p>
-              <ul className='list-disc list-inside text-gray-700 dark:text-white'>
-                <li>Conceptualized and designed MYSQL databases...</li>
-                <li>Utilized Spring Boot framework coupled with JPA...</li>
-                {/* ... 其他描述 */}
-              </ul>
+              <p className='text-gray-700 mb-4 mr-12 italic dark:text-white'>
+                Developed a medical appointment web application with some passionate team members...
+              </p>
             </div>
           </div>
         </section>
 
         <section>
           <ActiveSlider />
-          
+
         </section>
 
 
