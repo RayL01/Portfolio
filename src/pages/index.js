@@ -1,3 +1,5 @@
+
+
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
@@ -5,13 +7,17 @@ import styles from '@/styles/Home.module.css';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin, AiFillGoogleCircle, AiFillApple } from 'react-icons/ai';
 import deved from "../../public/dev-ed-wave.png";
-import design from "../../public/design.png";
-import code from "../../public/code.png";
-import consulting from "../../public/consulting.png";
 import padmatch from "../../public/padmatch.png";
 import { FaGooglePlay, FaApple } from 'react-icons/fa';
-
 import { useState } from 'react';
+import React from 'react';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import ActiveSlider from "../components/ActiveSlider";
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,7 +25,21 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
 
+  // project info
+  const projects = [
+    {
+      image: deved, // 使用导入的图片
+      title: "Project 1",
+      description: "Description for project 1",
+    },
+    // ...其他项目
+  ];
+
+
+
+
   const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -120,6 +140,18 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section>
+          <ActiveSlider />
+          
+        </section>
+
+
+
+
+
+
+
       </main>
     </div>
   )
