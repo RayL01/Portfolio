@@ -1,4 +1,4 @@
-FROM node:alphine AS builder
+FROM node:alpine AS builder
 
 # set up work directory
 WORKDIR /usr/src/app
@@ -13,13 +13,13 @@ RUN npm install
 COPY . .
 
 # build the next app
-RUN  npm run build && npm run export
+RUN  npm run build
 
 # Use Nginx to serve the app
 FROM nginx:alpine
 
 # copy the build output to replace the default nginx contents.(static resources)
-COPY --from=builder /usr/src/app/out /usr/share/nginx/html
+COPY --from=builder /usr/src/app/.next /usr/share/nginx/html
 
 # expose port 80
 EXPOSE 80

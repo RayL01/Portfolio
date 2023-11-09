@@ -1,23 +1,23 @@
-
+'use client';
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
+
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiOutlineMail,AiFillTwitterCircle, AiFillGithub, AiFillLinkedin, AiFillGoogleCircle, AiFillApple, AiOutlineTwitter } from 'react-icons/ai';
 import deved from "../../public/assets/dev-ed-wave.png";
-import profile from "../../public/assets/profile.jpg";
+
 import padmatch from "../../public/assets/padmatch.png";
 import { FaGooglePlay, FaApple, FaVuejs } from 'react-icons/fa';
 import { useState } from 'react';
 import React from 'react';
 import { DiSwift } from "react-icons/di";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 
-import { FaLinkedinIn, FaDev } from 'react-icons/fa';
+
+
 import { BiLogoFirebase, BiLogoFlutter, BiLogoAws, BiLogoDocker, BiLogoSpringBoot, BiLogoAngular, BiLogoVuejs, BiLogoUnity, BiLogoJava, BiLogoMongodb, BiLogoPostgresql, BiLogoReact } from "react-icons/bi";
-import { AiFillAndroid } from "react-icons/ai";
+
 import { SiKotlin, SiCplusplus, SiMysql, SiRedis, SiNginx } from "react-icons/si";
 
 // Import Swiper styles
@@ -26,21 +26,9 @@ import ActiveSlider from "../components/ActiveSlider";
 
 
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
-
-
-  // project info
-  const projects = [
-    {
-      image: deved, // 使用导入的图片
-      title: "Project 1",
-      description: "Description for project 1",
-    },
-    // ...其他项目
-  ];
-
 
 
 
@@ -73,7 +61,7 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-cyan-400'>Ray Liu</h2>
             <h3 className='text-2xl py-2'>CS Student & software developer</h3>
             <p className='text-md py-5 leading-8 text-gray-800 max-w-lg mx-auto dark:text-white'>
-              Welcome to my personal website! I'm Hongrui(Ray) Liu, currently a CS student @ Northeastern University. I am passionate about web development and software engineering. And I am currently looking for a full-time/intern software engineer position.
+              Welcome to my personal website! I&lsquo;m Hongrui(Ray) Liu, currently a CS student @ Northeastern University. I am passionate about web development and software engineering. And I am currently looking for a full-time/intern software engineer position.
             </p>
           </div>
           <div className='text-5xl flex justify-center space-x-6 py-3 text-gray dark:text-white'>
@@ -85,7 +73,7 @@ export default function Home() {
             </a>
           </div>
           <div className='overflow-hidden relative mx-auto bg-gradient-to-b from-teal-400 to-teal-950 rounded-full w-80 h-80 mt-20 md:h-96 md:w-96'>
-            <Image src={deved} layout='fill' objectFit='cover' />
+            <Image src={deved} layout='fill' objectFit='cover' alt='profile pic' unoptimized = {false}/>
           </div>
         </section>
 
@@ -113,7 +101,7 @@ export default function Home() {
                 PadMatch, Boston, Massachusetts — July 2023 - Present
               </p>
               <p className='text-gray-700 mb-4 italic dark:text-white' >
-                In this internship, I'm mainly responsible for the development of the mobile application. I'm using Flutter to build the app and Spring Boot as the backend. I'm also responsible for the design of the app as well as a tight collaboration with the UI/UX designer.
+                In this internship, I&lsquo;m mainly responsible for the development of the mobile application. I&lsquo;m using Flutter to build the app and Spring Boot as the backend. I&lsquo;m also responsible for the design of the app as well as a tight collaboration with the UI/UX designer.
               </p>
 
               <div className='flex flex-wrap justify-start items-center mt-4'>
@@ -130,7 +118,7 @@ export default function Home() {
                 </div>
                 {/* Image container */}
                 <div className='w-20 h-20 relative '>
-                  <Image src={padmatch} layout='fill' objectFit='contain' />
+                  <Image src={padmatch} layout='fill' objectFit='contain' alt='padmatch logNormalSummary' unoptimized = {false}/>
                 </div>
               </div>
             </div>
