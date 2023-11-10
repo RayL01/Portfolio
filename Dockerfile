@@ -19,7 +19,7 @@ RUN  npm run build
 FROM nginx:alpine
 
 # copy the build output to replace the default nginx contents.(static resources)
-COPY --from=builder /usr/src/app/.next /usr/share/nginx/html
+COPY --from=builder /usr/src/app/out /usr/share/nginx/html
 
 # expose port 80
 EXPOSE 80
