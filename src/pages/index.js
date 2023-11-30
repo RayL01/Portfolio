@@ -71,6 +71,7 @@ export default function Home() {
             <a href="https://github.com/RayL01" target="_blank" rel="noopener noreferrer">
               <AiFillGithub />
             </a>
+
           </div>
           <div className='overflow-hidden relative mx-auto bg-gradient-to-b from-teal-400 to-teal-950 rounded-full w-80 h-80 mt-20 md:h-96 md:w-96'>
             <Image src={deved} layout='fill' objectFit='cover' alt='profile pic' unoptimized = {false}/>
@@ -111,7 +112,7 @@ export default function Home() {
                     <FaGooglePlay className='text-4xl text-green-700' />
                     <span className='ml-2 dark:text-white'>Google Play</span>
                   </a>
-                  <a href='YOUR_APP_STORE_LINK' target='_blank' rel='noopener noreferrer' className='flex items-center'>
+                  <a href='https://apps.apple.com/us/app/residentspad/id6471167177' target='_blank' rel='noopener noreferrer' className='flex items-center'>
                     <FaApple className='text-4xl text-black dark:text-white' />
                     <span className='ml-2 dark:text-white'>App Store</span>
                   </a>
