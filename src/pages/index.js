@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiOutlineMail,AiFillTwitterCircle, AiFillGithub, AiFillLinkedin, AiFillGoogleCircle, AiFillApple, AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineMail, AiFillTwitterCircle, AiFillGithub, AiFillLinkedin, AiFillGoogleCircle, AiFillApple, AiOutlineTwitter } from 'react-icons/ai';
 import deved from "../../public/assets/dev-ed-wave.png";
 
 import padmatch from "../../public/assets/padmatch.png";
@@ -12,6 +12,7 @@ import { FaGooglePlay, FaApple, FaVuejs } from 'react-icons/fa';
 import { useState } from 'react';
 import React from 'react';
 import { DiSwift } from "react-icons/di";
+import aayats from "../../public/assets/aayats.jpg";
 
 
 
@@ -53,7 +54,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl ' />
               </li>
               <li>
-                <a className='bg-gradient-to-r from-cyan-400 to-teal-500 px-4 py-2 text-white rounded-md ml-8' href="/assets/Resume_Hongrui_Liu.pdf">Resume</a>
+                <a className='bg-gradient-to-r from-cyan-400 to-teal-500 px-4 py-2 text-white rounded-md ml-8' href="/assets/CV.pdf">Resume</a>
               </li>
             </ul>
           </nav>
@@ -74,7 +75,7 @@ export default function Home() {
 
           </div>
           <div className='overflow-hidden relative mx-auto bg-gradient-to-b from-teal-400 to-teal-950 rounded-full w-80 h-80 mt-20 md:h-96 md:w-96'>
-            <Image src={deved} layout='fill' objectFit='cover' alt='profile pic' unoptimized = {false}/>
+            <Image src={deved} layout='fill' objectFit='cover' alt='profile pic' unoptimized={false} />
           </div>
         </section>
 
@@ -93,6 +94,26 @@ export default function Home() {
             </p> */}
           </div>
           <div className='bg-gray space-y-6 pb-6'>
+            <div className='p-6 rounded-lg shadow-lg relative dark:bg-gray-800'>
+              <div>
+                <h3 className='text-xl text-gray-800 font-semibold mb-2 dark:text-white'>
+                  Founding software enginner @ Aayats
+                </h3>
+                <p className='text-teal-500 mb-4'>
+                  Ayyats, Atlanta, Georgia — Dec 2023 - Present
+                </p>
+                <p className='text-gray-700 mb-4 italic dark:text-white'>
+                  At Ayyats, I demonstrated significant leadership by spearheading the design and implementation of a scalable and highly available backend system using MongoDB and Azure Blob Storage. I led the engineering team in developing an AI-driven, full-stack mobile application, achieving key milestones towards a successful beta launch. My initiation of weekly technical stand-up meetings significantly enhanced team communication and alignment with project objectives, showcasing my commitment to fostering a culture of excellence and collaboration.
+                </p>
+              </div>
+              <div className='flex justify-end'>
+                <div className='w-20 h-20 relative'>
+                  <Image src={aayats} layout='fill' objectFit='contain' alt='Aayats logo' unoptimized={false} />
+                </div>
+              </div>
+            </div>
+
+
 
             <div className='p-6 rounded-lg shadow-lg relative dark:bg-gray-800'>
               <h3 className='text-xl text-gray-800 font-semibold mb-2 dark:text-white'>
@@ -119,10 +140,11 @@ export default function Home() {
                 </div>
                 {/* Image container */}
                 <div className='w-20 h-20 relative '>
-                  <Image src={padmatch} layout='fill' objectFit='contain' alt='padmatch logNormalSummary' unoptimized = {false}/>
+                  <Image src={padmatch} layout='fill' objectFit='contain' alt='padmatch logNormalSummary' unoptimized={false} />
                 </div>
               </div>
             </div>
+
 
 
 
