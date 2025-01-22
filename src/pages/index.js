@@ -62,7 +62,7 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-cyan-400'>Ray Liu</h2>
             <h3 className='text-2xl py-2'>CS Student & software developer</h3>
             <p className='text-md py-5 leading-8 text-gray-800 max-w-lg mx-auto dark:text-white'>
-              Welcome to my personal website! I&lsquo;m Hongrui(Ray) Liu, currently a CS student @ Northeastern University. I am passionate about web development and software engineering. And I am currently looking for a full-time/intern software engineer position.
+              Welcome to my personal website! I&lsquo;m Hongrui(Ray) Liu. I am passionate about web development and software engineering. And I am currently looking for a full-time software engineer position.
             </p>
           </div>
           <div className='text-5xl flex justify-center space-x-6 py-3 text-gray dark:text-white'>
@@ -97,14 +97,14 @@ export default function Home() {
             <div className='p-6 rounded-lg shadow-lg relative dark:bg-gray-800'>
               <div>
                 <h3 className='text-xl text-gray-800 font-semibold mb-2 dark:text-white'>
-                  Founding software enginner @ Aayats
+                  Software Engineer Intern @ Aayats
                 </h3>
                 <p className='text-teal-500 mb-4'>
-                  Ayyats, Atlanta, Georgia — Dec 2023 - Present
+                  Ayyats, Atlanta, Georgia — Jan 2024 - April 2024
                 </p>
-                <p className='text-gray-700 mb-4 italic dark:text-white'>
+                {/* <p className='text-gray-700 mb-4 italic dark:text-white'>
                   At Ayyats, I demonstrated significant leadership by spearheading the design and implementation of a scalable and highly available backend system using MongoDB and Azure Blob Storage. I led the engineering team in developing an AI-driven, full-stack mobile application, achieving key milestones towards a successful beta launch. My initiation of weekly technical stand-up meetings significantly enhanced team communication and alignment with project objectives, showcasing my commitment to fostering a culture of excellence and collaboration.
-                </p>
+                </p> */}
               </div>
               <div className='flex justify-end'>
                 <div className='w-20 h-20 relative'>
@@ -117,14 +117,14 @@ export default function Home() {
 
             <div className='p-6 rounded-lg shadow-lg relative dark:bg-gray-800'>
               <h3 className='text-xl text-gray-800 font-semibold mb-2 dark:text-white'>
-                Mobile Software Engineer Intern @ PadMatch
+                Full-Stack Software Engineer Intern @ PadMatch
               </h3>
               <p className='text-teal-500 mb-4'>
-                PadMatch, Boston, Massachusetts — July 2023 - Present
+                PadMatch, Boston, Massachusetts — July 2023 - Dec 2023
               </p>
-              <p className='text-gray-700 mb-4 italic dark:text-white' >
+              {/* <p className='text-gray-700 mb-4 italic dark:text-white' >
                 In this internship, I&lsquo;m mainly responsible for the development of the mobile application. I&lsquo;m using Flutter to build the app and Spring Boot as the backend. I&lsquo;m also responsible for the design of the app as well as a tight collaboration with the UI/UX designer.
-              </p>
+              </p> */}
 
               <div className='flex flex-wrap justify-start items-center mt-4'>
 
@@ -152,17 +152,11 @@ export default function Home() {
             <div className=' shadow-lg rounded-lg p-6 dark:bg-gray-800'>
               <h3 className='text-xl text-gray-800 font-semibold dark:text-white'>Software Engineering Intern</h3>
               <p className='text-teal-500'>Chongqing Kungang Technology Co., Ltd., China — May 2021 - July 2021</p>
-              <p className='text-gray-700 mb-4 mr-12 italic dark:text-white'>
+              {/* <p className='text-gray-700 mb-4 mr-12 italic dark:text-white'>
                 Here I was responsible for the development of the backend of a chemical industry safety management system . I was using Spring Boot framework to build the backend and MySQL as the database. I was also responsible for the testing of the backend with JUnit.
-              </p>
+              </p> */}
             </div>
-            <div className=' shadow-lg rounded-lg p-6 dark:bg-gray-800'>
-              <h3 className='text-xl text-gray-800 font-semibold dark:text-white'>Software Engineering Intern</h3>
-              <p className='text-teal-500'>Beijing Qianfeng Internet Technology Co., Ltd, China — May 2020 - July 2020</p>
-              <p className='text-gray-700 mb-4 mr-12 italic dark:text-white'>
-                Developed a medical appointment web application with some passionate team members...
-              </p>
-            </div>
+            
           </div>
         </section>
 

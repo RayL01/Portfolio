@@ -18,8 +18,16 @@
   import SpaceCity7 from "../../public/assets/SpaceCity7.jpeg";
   import SpaceCity8 from "../../public/assets/SpaceCity8.jpeg";
   import SpaceCity9 from "../../public/assets/SpaceCity9.jpeg";
+  import { FaNodeJs } from "react-icons/fa6";
   
   export const ServiceData = [
+    {
+      icon: FaNodeJs,
+      title: "Node.js & React App",
+      content: "Full-stack web application for an E-commerce website.",
+      backgroundImage: SpaceCity1,
+      url: "https://github.com/RayL01/ecommerce/tree/main"
+    },
     {
       icon: AiOutlineMobile,
       title: "ResidentsPad",
@@ -34,6 +42,7 @@
       backgroundImage: SpaceCity1,
       url: "https://github.com/RayL01/studentdemoBackEnd"
     },
+    
     {
       icon: BiLogoVuejs,
       title: "Spring Boot & Vue App",
